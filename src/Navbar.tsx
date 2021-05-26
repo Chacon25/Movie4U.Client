@@ -33,7 +33,7 @@ export default function Navbar({ choices }: NavbarProps) {
 
                             //console.log(user);
 
-                            fetch("https://localhost:44390/api/Recommendation", {
+                            fetch("https://movie4uapi.azurewebsites.net/api/Recommendation", {
                                 method: 'POST',
                                 body: JSON.stringify({ choices, user }),
                                 headers: {
